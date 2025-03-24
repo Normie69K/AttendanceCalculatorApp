@@ -13,14 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.attendancecalculatorapp.ui.theme.AttendanceCalculatorAppTheme
 
-class MainActivity : ComponentActivity() {
+class HomeScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             AttendanceCalculatorAppTheme {
-                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    Greeting(
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    Greeting2(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting2(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -40,8 +40,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun GreetingPreview2() {
     AttendanceCalculatorAppTheme {
-        Greeting("Karan")
+        Greeting2("Karan")
     }
 }
